@@ -1,0 +1,19 @@
+<div class="control-section">
+  <br />
+  <br />
+  <br />
+  <br/>
+  
+  <button (click)="annotationAdd()">Annotation Add</button>
+
+  <div class="content-wrapper">
+    <ejs-pdfviewer
+      id="pdfViewer"
+      [serviceUrl]="service"
+      [documentPath]="document"
+      style="height:640px;display:block"
+      (annotationPropertiesChange)="annotationPropertiesChange($event)"
+      (annotationAdd)="annotationAdded($event)"
+    ></ejs-pdfviewer>
+  </div>
+</div>
